@@ -19,12 +19,13 @@ public class LeetCode1299 {
 
     static int[] Method1(int[] arr) {
         for(int i = 0; i < arr.length - 1; i++) {
-            int maxRight = arr[i + 1];
-            for(int j = i + 2; j < arr.length - 1; j++) {
-                if(maxRight < arr[j])
-                    maxRight = arr[j];
+            int max = 0;
+            for(int j = i + 1; j < arr.length; j++) {
+                if(max < arr[j]) {
+                    max = arr[j];
+                }
             }
-            arr[i] = maxRight;
+            arr[i] = max;
         }
         arr[arr.length - 1] = -1;
 
