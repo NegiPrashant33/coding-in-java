@@ -16,7 +16,7 @@ import java.util.*;
 */
 public class LeetCode217 {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 1};
+        int[] nums = {1, 2, 3, 4, 1};
 
         boolean result = Method4(nums);
 
