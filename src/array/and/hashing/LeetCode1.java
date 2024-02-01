@@ -7,10 +7,25 @@ public class LeetCode1 {
         int[]  nums = {2, 7, 11, 15};
         int target = 9;
 
-        System.out.println(Arrays.toString(Method(nums, target)));
+        System.out.println(Arrays.toString(Method2(nums, target)));
     }
 
-    static int[] Method(int[] nums, int target) {
+
+    static int[] Method1(int[] nums, int target) {
+         for(int i = 0; i < nums.length; i++) {
+             int diff = target - nums[i];
+            for(int j = i + 1; j < nums.length; j++) {
+                if(diff == nums[j]) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+
+        return new int[]{};
+    }
+
+
+    static int[] Method2(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for(int i = 0; i < nums.length; i++) {
             int diff = target - nums[i];
