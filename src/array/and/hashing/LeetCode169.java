@@ -1,5 +1,8 @@
 package array.and.hashing;
 import java.util.*;
+
+// Majority Element https://leetcode.com/problems/majority-element/description/
+
 public class LeetCode169 {
     public static void main(String[] args) {
         int[] nums = {2, 2, 1, 1, 1, 2, 2};
