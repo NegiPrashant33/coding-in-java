@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 import java.util.*;
 
 // Group anagrams https://leetcode.com/problems/group-anagrams/description/

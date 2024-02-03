@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 
 // Longest Common Prefix https://leetcode.com/problems/longest-common-prefix/description/
 public class LeetCode14 {

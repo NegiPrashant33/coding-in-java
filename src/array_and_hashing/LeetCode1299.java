@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 
 // Replace Elements with Greatest Element on Right Side, https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/description/
 /*

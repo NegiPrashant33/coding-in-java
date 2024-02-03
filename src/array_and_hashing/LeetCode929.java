@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 import java.util.*;
 // Unique Email Addresses https://leetcode.com/problems/unique-email-addresses/description/
 public class LeetCode929 {

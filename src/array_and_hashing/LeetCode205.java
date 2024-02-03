@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 import java.util.*;
 
 // Isomorphic Strings https://leetcode.com/problems/isomorphic-strings/description/

@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 
 // Remove Element https://leetcode.com/problems/remove-element/
 

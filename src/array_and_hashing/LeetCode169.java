@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 import java.util.*;
 
 // Majority Element https://leetcode.com/problems/majority-element/description/

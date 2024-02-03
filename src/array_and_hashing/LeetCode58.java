@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 
 // Length of Last Word https://leetcode.com/problems/length-of-last-word/description/
 public class LeetCode58 {

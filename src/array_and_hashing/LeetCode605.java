@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 
 // Can place flowers        https://leetcode.com/problems/can-place-flowers/description/
 public class LeetCode605 {

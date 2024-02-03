@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 import java.util.*;
 
 // Plus one https://leetcode.com/problems/plus-one/

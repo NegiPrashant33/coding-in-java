@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 
 // Concatenation of Array, https://leetcode.com/problems/concatenation-of-array/
 public class LeetCode1929 {

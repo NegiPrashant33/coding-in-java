@@ -1,4 +1,4 @@
-package array.and.hashing;
+package array_and_hashing;
 import java.util.*;
 
 // Pascal's Triangle https://leetcode.com/problems/pascals-triangle/description/
