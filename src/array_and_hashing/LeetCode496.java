@@ -1,6 +1,10 @@
 package array_and_hashing;
 import java.util.*;
 // Next Greater Element     https://leetcode.com/problems/next-greater-element-i/description/
+
+/*
+    Do it using stack
+*/
 public class LeetCode496 {
     public static void main(String[] args) {
         int[] nums1 = {4, 1, 2};
