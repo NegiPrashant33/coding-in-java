@@ -1,8 +1,8 @@
 package generics;
 
-public class IntegerPrinter {
-    Integer thingToPrint;
-    public IntegerPrinter(Integer thingToPrint) {
+public class StringPrinter {
+    String thingToPrint;
+    public StringPrinter(String thingToPrint) {
         this.thingToPrint = thingToPrint;
     }
 

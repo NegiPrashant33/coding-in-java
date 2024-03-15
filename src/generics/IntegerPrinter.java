@@ -1,9 +1,8 @@
 package generics;
 
-// Generic Class, <T> --> type parameter
-public class Printer <T>{
-    T thingToPrint;
-    public Printer(T thingToPrint) {
+public class IntegerPrinter {
+    Integer thingToPrint;
+    public IntegerPrinter(Integer thingToPrint) {
         this.thingToPrint = thingToPrint;
     }
 
