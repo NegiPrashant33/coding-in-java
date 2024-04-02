@@ -1,2 +1,6 @@
-package java8;public interface Employee {
+package java8;
+
+@FunctionalInterface
+public interface Employee {
+    String getName();
 }

@@ -9,7 +9,7 @@ import java.util.List;
     implementation for the abstract method inside functional interface.
     Using lambda expression we don't need to use any separate implementation class.
 */
-public class LambdaExpression {
+public class LambdaExpressionDemo {
     public static void main(String[] args) {
         Employee se = () -> {
             return "Software Engineer";
