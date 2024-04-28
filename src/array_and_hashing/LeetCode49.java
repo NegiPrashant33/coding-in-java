@@ -7,11 +7,11 @@ public class LeetCode49 {
     public static void main(String[] args) {
         String[] strs = {"eat", "tea", "tan", "ate", "nat"," bat"};
 
-        List<List<String>> result = Method(strs);
+        List<List<String>> result = groupAnagrams(strs);
         System.out.println(result);
     }
 
-    static List<List<String>> Method(String[] strs) {
+    static List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
         for(String word : strs) {

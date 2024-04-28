@@ -10,17 +10,19 @@ import java.util.*;
 
     Different approaches to solve this problem
 
-    1. Brute force approach ( Sorting )
-    2. Hash Table using HashMap
-    3. Hash Table using Array
+    1. Brute force approach ( Sorting ) O(nlogn)
+    2. Hash Table using HashMap O(n)
+    3. Hash Table using Array   O(n)
 
+    In all the methods mentioned below, first thing we can do is to return false
+    if the length of both the strings are not same.
 */
 public class LeetCode242 {
     public static void main(String[] args) {
         String s = "anagram";
         String t = "nagaram";
 
-        boolean result = Method3(s, t);
+        boolean result = validAnagram3(s, t);
 
         if(result)
             System.out.println("Is Anagram");
@@ -28,7 +30,7 @@ public class LeetCode242 {
             System.out.println("Is not an Anagram");
     }
 
-    static boolean Method1(String s, String t) {
+    static boolean validAnagram1(String s, String t) {
         char[] sChars = s.toCharArray();
         char[] tChars = t.toCharArray();
 
@@ -38,7 +40,7 @@ public class LeetCode242 {
         return Arrays.equals(sChars, tChars);
     }
 
-    static boolean Method2(String s, String t) {
+    static boolean validAnagram2(String s, String t) {
         Map<Character, Integer> freq = new HashMap<>();
 
         for(char x : s.toCharArray())
@@ -53,9 +55,14 @@ public class LeetCode242 {
         }
 
         return true;
+        /*
+            Using Functional Programming
+            allMatch(), takes a Predicate as an argument
+            return freq.values().stream().allMatch(value -> value == 0);
+        */
     }
 
-    static boolean Method3(String s, String t) {
+    static boolean validAnagram3(String s, String t) {
         int[] count = new int[26];
 
         for(char x : s.toCharArray())

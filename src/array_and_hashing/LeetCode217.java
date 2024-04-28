@@ -11,14 +11,14 @@ import java.util.*;
     1. Brute Force approach O(n^2)
     2. Sorting O(nlogn)
     3. HashSet O(n)
-    4. HashMap 0(n)
+    4. HashMap O(n)
 
 */
 public class LeetCode217 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4, 1};
 
-        boolean result = Method4(nums);
+        boolean result = containsDuplicte4(nums);
 
         if(result)
             System.out.println("Contains duplicate");
@@ -26,7 +26,7 @@ public class LeetCode217 {
             System.out.println("Does not contain duplicate");
     }
 
-    static boolean Method1(int[] nums) {
+    static boolean containsDuplicte1(int[] nums) {
         int len = nums.length;
         for(int i = 0; i < len - 1; i++) {
             for(int j = i + 1; j < len; j++) {
@@ -39,7 +39,7 @@ public class LeetCode217 {
         return false;
     }
 
-    static boolean Method2(int[] nums) {
+    static boolean containsDuplicte2(int[] nums) {
         int len = nums.length;
         Arrays.sort(nums);
 
@@ -51,21 +51,22 @@ public class LeetCode217 {
         return false;
     }
 
-    static boolean Method3(int[] nums) {
+    static boolean containsDuplicte3(int[] nums) {
         int len = nums.length;
+        // List<Integer> seen = new ArrayList<>();
         Set<Integer> seen = new HashSet<>();
 
-        for(int i = 0; i < len; i++) {
-            if(seen.contains(nums[i]))
+        for(int num : nums) {
+            if(seen.contains(num))
                 return true;
 
-            seen.add(nums[i]);
+            seen.add(num);
         }
 
         return false;
     }
 
-    static boolean Method4(int[] nums) {
+    static boolean containsDuplicte4(int[] nums) {
         int len = nums.length;
         Map<Integer, Integer> freq = new HashMap<>();
 
@@ -77,5 +78,12 @@ public class LeetCode217 {
         }
 
         return false;
+
+        /*
+            Using Functional Programming
+            anyMatch(), takes a Predicate as an argument
+            after creating a map of elements and their respective frequency
+            return freq.values().stream().anyMatch(value -> value > 1);
+        */
     }
 }
